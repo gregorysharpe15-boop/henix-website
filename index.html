@@ -232,6 +232,8 @@ section{padding-block:clamp(60px,8vw,100px);}
 .test-card{background:var(--bg-elevated);padding:26px 24px;border-radius:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:16px;}
 .test-quote{font-family:'Fraunces',serif;font-weight:500;font-style:italic;font-size:18px;line-height:1.4;color:var(--ink);}
 .test-who{font-size:13px;font-weight:700;color:var(--teal-deep);}
+.test-feature{grid-column:1/-1;border-left:4px solid var(--copper, #b0793c);}
+.test-feature .test-quote{font-size:19px;}
 @media (max-width:760px){.test-top{grid-template-columns:1fr;}}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
 .gallery img{width:100%;height:220px;object-fit:cover;border-radius:18px;box-shadow:var(--shadow);}
@@ -567,6 +569,12 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
         <p>Feedback from men who've come through HeNix circles, sound meditation and breathwork sessions.</p>
       </div>
       <div class="test-top">
+        <div class="test-card test-feature">
+          <p class="test-quote">&ldquo;Greg&rsquo;s presence and the way he carries himself give me a deep sense of trust. In the space he creates, I feel genuinely welcomed and supported, without being given advice or anyone trying to fix me. That connection keeps bringing me back to the circle.</p>
+          <p class="test-quote">Hearing other men&rsquo;s experiences reminds me that I&rsquo;m not alone. Through sharing, a sense of brotherhood grows&mdash;something I can lean on and trust. Being able to share my truth without judgement or pressure to change, and to be heard just as I am, means a great deal to me.</p>
+          <p class="test-quote">One of the things I value most about Greg is his big heart and his willingness to keep working on himself. He doesn&rsquo;t present himself as a guru with all the answers. He&rsquo;s on this journey too, showing up alongside us with his whole heart. He holds the space without placing himself above or apart from anyone else. It feels like we&rsquo;re all in the same boat&mdash;no captain or crew, just people sharing honestly, willing to hear and understand one another.&rdquo;</p>
+          <span class="test-who">Halim, HeNix circle member</span>
+        </div>
         <div class="test-card">
           <p class="test-quote">&ldquo;Thank you so much for creating such a special space. Honestly, I've been to men's circles before and I've never felt so grounded yet empowered. I'll see you next time.&rdquo;</p>
           <span class="test-who">Ben F.</span>

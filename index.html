@@ -9,6 +9,12 @@
 <meta property="og:description" content="A confidential space for men to drop the armour and connect. Circles, sound meditation and breathwork.">
 <meta property="og:image" content="https://henix.co.uk/assets/logo-large.png">
 <link rel="icon" href="assets/logo-mark.png">
+<link rel="canonical" href="https://henix.co.uk/">
+<meta name="theme-color" content="#1C2420">
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"Event","name":"HeNix TW1 Men's Circle","startDate":"2026-11-17T20:15:00+00:00","endDate":"2026-11-17T21:30:00+00:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"Salt Studios","address":{"@type":"PostalAddress","addressLocality":"Twickenham","addressCountry":"GB"}},"description":"A confidential men's circle: breathwork, sitting in pairs and the circle, closing with meditation.","image":"https://henix.co.uk/assets/logo-large.png","offers":{"@type":"Offer","price":"20","priceCurrency":"GBP","url":"https://www.eventbrite.com/cc/tw1-mens-circles-4878642","availability":"https://schema.org/InStock"},"organizer":{"@type":"Organization","name":"HeNix","url":"https://henix.co.uk"}},
+{"@context":"https://schema.org","@type":"Event","name":"Men's Circle at The Space, Clapham","startDate":"2026-11-13T19:15:00+00:00","endDate":"2026-11-13T21:00:00+00:00","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":{"@type":"Place","name":"The Space","address":{"@type":"PostalAddress","addressLocality":"Clapham, London","addressCountry":"GB"}},"offers":{"@type":"Offer","price":"35","priceCurrency":"GBP","url":"https://nathanausten.myflodesk.com/inperson13thnov"},"organizer":{"@type":"Organization","name":"HeNix","url":"https://henix.co.uk"}}]
+</script>
 </head>
 <body>
 <style>
@@ -263,6 +269,58 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
 .foot-links a:hover{color:#fff;}
 
 @media (prefers-reduced-motion: reduce){*{transition:none !important;}}
+
+/* ---------- DATES / NIGHT / FAQ ---------- */
+.dates{background:var(--bg-elevated);}
+.date-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.date-card{border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px;background:var(--bg);}
+.date-card.next{border-color:var(--orange);box-shadow:var(--shadow);}
+.date-tag{align-self:flex-start;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:var(--orange);color:#241207;font-weight:700;}
+.date-tag.alt{background:var(--bg-sunken);color:var(--ink-soft);}
+.date-day{font-family:'Fraunces',Georgia,serif;font-size:clamp(26px,3.4vw,34px);font-weight:600;line-height:1.1;}
+.date-meta{color:var(--ink-soft);font-size:15px;line-height:1.6;}
+.date-meta b{color:var(--ink);}
+.date-card .btn{align-self:flex-start;margin-top:6px;}
+.date-note{margin-top:22px;color:var(--ink-soft);font-size:14.5px;line-height:1.6;}
+.night{background:var(--bg);}
+.night-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:start;}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;}
+.steps li{display:grid;grid-template-columns:76px 1fr;gap:16px;padding-block:18px;border-bottom:1px solid var(--line);}
+.steps li:first-child{border-top:1px solid var(--line);}
+.steps time{font-family:'Space Mono',monospace;font-weight:700;color:var(--orange-deep);font-size:15px;padding-top:2px;}
+.steps b{display:block;font-size:16.5px;margin-bottom:3px;}
+.steps span{color:var(--ink-soft);font-size:14.5px;line-height:1.55;}
+.faq{display:flex;flex-direction:column;gap:10px;margin-top:8px;}
+.faq details{background:var(--bg-elevated);border:1px solid var(--line);border-radius:16px;padding:16px 20px;}
+.faq summary{cursor:pointer;font-weight:700;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";color:var(--orange-deep);font-weight:700;}
+.faq details[open] summary::after{content:"\2013";}
+.faq details p{margin-top:10px;color:var(--ink-soft);font-size:14.5px;line-height:1.6;}
+.playlist{background:var(--bg-sunken);}
+@media (max-width:820px){.date-grid,.night-grid{grid-template-columns:1fr;}}
+.online{background:linear-gradient(120deg,var(--teal-deep),var(--dark) 70%);color:var(--on-dark);}
+.online .section-head .eyebrow-plain{color:#9FD0D3;}
+.online .section-head h2{color:#fff;}
+.online .section-head p{color:var(--on-dark-soft);}
+.online-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:clamp(28px,5vw,60px);align-items:center;}
+.online-points{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-direction:column;gap:12px;}
+.online-points li{display:flex;gap:12px;color:var(--on-dark);font-size:15.5px;line-height:1.55;}
+.online-points li::before{content:"";flex:none;width:8px;height:8px;margin-top:8px;border-radius:50%;background:var(--orange);}
+.online-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:14px;}
+.online-card h3{font-size:22px;color:#fff;}
+.online-card p{color:var(--on-dark-soft);font-size:14.5px;line-height:1.6;}
+.online-card .btn{justify-content:center;}
+.audio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:28px;}
+.track{background:var(--bg-elevated);border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:10px;}
+.track h3{font-size:19px;}
+.track p{color:var(--ink-soft);font-size:14px;line-height:1.55;}
+.track audio{width:100%;margin-top:4px;}
+.track-tag{font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep);}
+.audio-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:var(--bg-elevated);border:1px solid var(--line);border-radius:20px;padding:22px 24px;margin-bottom:28px;}
+.audio-cta p{color:var(--ink-soft);font-size:15px;line-height:1.55;max-width:560px;}
+.audio-cta b{color:var(--ink);}
+@media (max-width:820px){.online-grid,.audio-grid{grid-template-columns:1fr;}}
 </style>
 
 
@@ -273,13 +331,15 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
       <span class="brand-word">HeNix</span>
     </a>
     <ul class="nav-links">
+      <li><a href="#dates">Dates</a></li>
       <li><a href="#circles">Circles</a></li>
       <li><a href="#story">Story</a></li>
       <li><a href="#locations">Locations</a></li>
-      <li><a href="#voices">Voices</a></li>
+      <li><a href="#online">Talk online</a></li>
+      <li><a href="#listen">Listen</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-cta" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Reserve your space</a>
+    <a class="nav-cta" href="#dates">Book a circle</a>
   </div>
 </nav>
 
@@ -288,12 +348,12 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
     <img class="hero-glyph" src="assets/logo-large.png" alt="">
     <div class="wrap hero-grid">
       <div class="hero-inner">
-        <span class="eyebrow">Confidential &middot; Men's Circles, London</span>
+        <span class="eyebrow">Next circle &middot; Tue 17 Nov &middot; Salt Studios, TW1</span>
         <h1>And so <em>we rise.</em></h1>
         <p class="hero-sub">A confidential space for men to step out of the always-on grind, drop the armour, and connect &mdash; honestly, without needing to perform. Circles, sound meditation and breathwork, built for busy lives, not silent retreats.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Reserve your space</a>
-          <a class="btn btn-ghost" href="https://instagram.com/henix_group" target="_blank" rel="noopener">Message @henix_group</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 17 Nov &middot; &pound;20</a>
+          <a class="btn btn-ghost" href="#night">What happens on the night</a>
         </div>
       </div>
       <div class="hero-photo">
@@ -310,10 +370,86 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
     </div>
   </div>
 
+
+  <section class="dates" id="dates">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow-plain">Upcoming circles</span>
+        <h2>Pick a night and come as you are</h2>
+        <p>Spaces are limited and every circle is pre-book only. No experience needed, and you never have to speak.</p>
+      </div>
+      <div class="date-grid">
+        <div class="date-card">
+          <span class="date-tag alt">Clapham</span>
+          <div class="date-day">Friday 13 November</div>
+          <p class="date-meta"><b>7:15&ndash;9pm &middot; The Space, Clapham</b><br>Men's circle co-hosted with @nathan.saul.austen and @riq.hard. &pound;35.</p>
+          <a class="btn btn-dark" href="https://nathanausten.myflodesk.com/inperson13thnov" target="_blank" rel="noopener">Reserve for 13 Nov</a>
+        </div>
+        <div class="date-card next">
+          <span class="date-tag">International Men's Day week</span>
+          <div class="date-day">Tuesday 17 November</div>
+          <p class="date-meta"><b>8:15&ndash;9:30pm &middot; Salt Studios, Twickenham (TW1)</b><br>Breathwork, sitting in pairs and the circle, closing with a short meditation. &pound;20.</p>
+          <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book on Eventbrite</a>
+        </div>
+      </div>
+      <p class="date-note">Money tight? <a href="mailto:gregorysharpe15@gmail.com" style="color:var(--teal-deep);font-weight:700;">Email Greg</a> and we'll sort something out. Bringing a mate who could do with it? Even better. New dates are added after each circle: follow <a href="https://instagram.com/henix_group" target="_blank" rel="noopener" style="color:var(--teal-deep);font-weight:700;">@henix_group</a> or the <a href="https://www.facebook.com/1442963268897060" target="_blank" rel="noopener" style="color:var(--teal-deep);font-weight:700;">Facebook page</a> to hear first.</p>
+    </div>
+  </section>
+
+  <section class="night" id="night">
+    <div class="wrap night-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:22px;">
+          <span class="eyebrow-plain">What to expect</span>
+          <h2>What happens on the night</h2>
+          <p>A TW1 circle runs to the same simple shape every time, so you know what you're walking into.</p>
+        </div>
+        <div class="faq">
+          <details><summary>Do I have to talk?</summary><p>No. Sharing is always optional. Plenty of men come and just listen, and that counts too.</p></details>
+          <details><summary>I've never done anything like this. Is that OK?</summary><p>Yes. No experience needed. Most men walk in a bit unsure, and that's normal.</p></details>
+          <details><summary>Is it confidential?</summary><p>Yes. What's said in the room stays in the room. No advice, no fixing, no judgement.</p></details>
+          <details><summary>Is this therapy?</summary><p>No. It's a peer space for men to be heard. If you're struggling right now, please talk to your GP, call Samaritans free on 116 123, or text SHOUT to 85258.</p></details>
+          <details><summary>How do I book?</summary><p>Salt Studios circles are booked on <a href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Eventbrite</a>; Clapham circles through the <a href="https://nathanausten.myflodesk.com/inperson13thnov" target="_blank" rel="noopener">booking link</a>. Pre-book only, no paying on the door.</p></details>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><time>8:15</time><div><b>Arrive</b><span>A quiet room with low light. Land, switch off from the day.</span></div></li>
+        <li><time>8:25</time><div><b>Breathwork</b><span>A few minutes to slow down and get out of your head.</span></div></li>
+        <li><time>8:30</time><div><b>Sit in pairs</b><span>One talks, one listens. No interrupting, no advice. You're simply heard.</span></div></li>
+        <li><time>8:45</time><div><b>The circle</b><span>Each man can share what's on his mind. Sharing is optional.</span></div></li>
+        <li><time>9:30</time><div><b>Close</b><span>A short meditation and grounding before you head home.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="online" id="online">
+    <div class="wrap online-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:24px;">
+          <span class="eyebrow-plain">Not ready for a room?</span>
+          <h2>Let's talk online first</h2>
+          <p>Walking into a circle can feel like a lot. If it does, that's completely normal, so start smaller: a private one-to-one video chat with Greg, from wherever you are.</p>
+        </div>
+        <ul class="online-points">
+          <li>Just you and Greg, on video or voice. Camera off is fine.</li>
+          <li>No pressure to book a circle afterwards. It's a conversation, not a sales call.</li>
+          <li>Talk through what's going on, or just ask what a circle is really like.</li>
+        </ul>
+      </div>
+      <div class="online-card">
+        <h3>Book a quiet chat</h3>
+        <p>Send a message with a couple of times that suit you, and Greg will reply personally to set it up.</p>
+        <a class="btn btn-primary" href="mailto:gregorysharpe15@gmail.com?subject=HeNix%20online%20chat">Email Greg</a>
+        <a class="btn btn-ghost" href="https://instagram.com/henix_group" target="_blank" rel="noopener">DM @henix_group</a>
+        <p style="font-size:13px;">If you're in crisis right now, please call Samaritans free on 116 123 or text SHOUT to 85258.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="story" id="story">
     <div class="wrap story-grid">
       <div class="story-photo">
-        <img src="assets/greg-portrait.jpg" alt="Greg Sharpe, founder of HeNix">
+        <img loading="lazy" src="assets/greg-portrait.jpg" alt="Greg Sharpe, founder of HeNix">
       </div>
       <div class="story-copy">
         <div class="section-head" style="margin-bottom:22px;">
@@ -347,17 +483,17 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
       </div>
       <div class="off-grid">
         <div class="off-card">
-          <div class="off-photo"><img src="assets/group-rug.jpg" alt="HeNix men's circle group"></div>
+          <div class="off-photo"><img loading="lazy" src="assets/group-rug.jpg" alt="HeNix men's circle group"></div>
           <h3>Hosted Circles</h3>
           <p>A confidential space for men to step out of the always-on grind, drop the armour, and connect honestly, without needing to perform.</p>
         </div>
         <div class="off-card">
-          <div class="off-photo"><img src="assets/meditation.jpg" alt="Meditation practice"></div>
+          <div class="off-photo"><img loading="lazy" src="assets/meditation.jpg" alt="Meditation practice"></div>
           <h3>Meditation</h3>
           <p>Simple, practical meditation you can actually use &mdash; built for busy lives, not silent retreats. Time-friendly lessons for sharpening focus and managing daily pressure.</p>
         </div>
         <div class="off-card">
-          <div class="off-photo"><img src="assets/breathwork.jpg" alt="Breathwork and sound meditation session"></div>
+          <div class="off-photo"><img loading="lazy" src="assets/breathwork.jpg" alt="Breathwork and sound meditation session"></div>
           <h3>Breathwork &amp; Sound</h3>
           <p>Not a passive wellness exercise &mdash; a direct lever for performance and nervous system regulation, whether you're walking in stressed or hyper-anxious.</p>
         </div>
@@ -374,23 +510,23 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
       </div>
       <div class="loc-grid">
         <div class="loc-card">
-          <div class="loc-photo"><img src="assets/salt-studios.jpg" alt="Salt Studios, Twickenham"></div>
+          <div class="loc-photo"><img loading="lazy" src="assets/salt-studios.jpg" alt="Salt Studios, Twickenham"></div>
           <div class="loc-body">
             <h3>Salt Studios &middot; TW1</h3>
-            <p>Tuesdays 20 Oct, 3 Nov &amp; 17 Nov, 8:15&ndash;9:30pm. Booking for each circle opens after the one before.</p>
+            <p>Next circle: <b>Tuesday 17 November, 8:15&ndash;9:30pm</b>. &pound;20, pre-book only. Booking for each circle opens after the one before.</p>
             <a class="loc-link" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book on Eventbrite &rarr;</a>
           </div>
         </div>
         <div class="loc-card">
-          <div class="loc-photo"><img src="assets/space-clapham.jpg" alt="The Space, Clapham"></div>
+          <div class="loc-photo"><img loading="lazy" src="assets/space-clapham.jpg" alt="The Space, Clapham"></div>
           <div class="loc-body">
             <h3>The Space &middot; Clapham</h3>
-            <p>Co-hosted with @nathan.saul.austen and @riq.hard.</p>
-            <a class="loc-link" href="https://nathanausten.myflodesk.com/17thoctober" target="_blank" rel="noopener">Reserve for 17th October &rarr;</a>
+            <p>Next circle: <b>Friday 13 November, 7:15&ndash;9pm</b>. &pound;35. Co-hosted with @nathan.saul.austen and @riq.hard.</p>
+            <a class="loc-link" href="https://nathanausten.myflodesk.com/inperson13thnov" target="_blank" rel="noopener">Reserve for 13 November &rarr;</a>
           </div>
         </div>
         <div class="loc-card host">
-          <img src="assets/logo-large.png" alt="HeNix &mdash; And so we rise">
+          <img loading="lazy" src="assets/logo-large.png" alt="HeNix &mdash; And so we rise">
           <h3>Host a circle near you</h3>
           <p>Interested in hosting a Men's Circle in your local area? Please get in touch.</p>
           <a class="loc-link" href="mailto:gregorysharpe15@gmail.com">Email Greg &rarr;</a>
@@ -417,9 +553,9 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
         </div>
       </div>
       <div class="gallery">
-        <img src="assets/soundbath-standing.jpg" alt="Men connecting at a HeNix circle">
-        <img src="assets/soundbath1.jpg" alt="Sound meditation session">
-        <img src="assets/group-rug.jpg" alt="HeNix and The Light House group">
+        <img loading="lazy" src="assets/soundbath-standing.jpg" alt="Men connecting at a HeNix circle">
+        <img loading="lazy" src="assets/soundbath1.jpg" alt="Sound meditation session">
+        <img loading="lazy" src="assets/group-rug.jpg" alt="HeNix and The Light House group">
       </div>
     </div>
   </section>
@@ -428,7 +564,7 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
     <div class="wrap">
       <h2>No man has to navigate the dark alone.</h2>
       <div class="cta-band-actions">
-        <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Reserve your space</a>
+        <a class="btn btn-primary" href="#dates">See the next dates</a>
         <a class="btn btn-ghost" href="https://instagram.com/henix_group" target="_blank" rel="noopener">DM on Instagram</a>
       </div>
     </div>
@@ -447,6 +583,14 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
             <div><h4>Instagram</h4><a href="https://instagram.com/henix_group" target="_blank" rel="noopener">@henix_group</a></div>
           </div>
           <div class="contact-item">
+            <span class="ico">f</span>
+            <div><h4>Facebook</h4><a href="https://www.facebook.com/1442963268897060" target="_blank" rel="noopener">HeNix &ndash; TW1 Men's Circle</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="ico">&#9679;</span>
+            <div><h4>HeNix app</h4><a href="https://henix-member-app-2j3p.bolt.host" target="_blank" rel="noopener">Free member app: dates, guided audio and check-ins</a></div>
+          </div>
+          <div class="contact-item">
             <span class="ico">&#9993;</span>
             <div><h4>Email</h4><a href="mailto:gregorysharpe15@gmail.com">gregorysharpe15@gmail.com</a></div>
           </div>
@@ -458,15 +602,34 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
       </div>
       <div class="form-card">
         <h3>Ready to join a circle?</h3>
-        <p>Reserve a seat at the next Salt Studios circle on Eventbrite, or DM @henix_group for the next Clapham date and any questions about what to expect.</p>
-        <a class="btn btn-dark" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Reserve on Eventbrite</a>
+        <p>Next up: Clapham on Friday 13 Nov, then Salt Studios, TW1 on Tuesday 17 Nov (International Men's Day week).</p>
+        <a class="btn btn-dark" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 17 Nov on Eventbrite</a>
+        <a class="btn btn-ghost" style="color:var(--ink);border-color:var(--line-strong);margin-top:10px" href="https://nathanausten.myflodesk.com/inperson13thnov" target="_blank" rel="noopener">Reserve Clapham, 13 Nov</a>
         <p class="contact-note">Prefer to ask first? Email <a href="mailto:gregorysharpe15@gmail.com" style="color:var(--teal-deep);font-weight:700;">Greg</a> or DM <a href="https://instagram.com/henix_group" target="_blank" rel="noopener" style="color:var(--teal-deep);font-weight:700;">@henix_group</a> directly.</p>
       </div>
     </div>
   </section>
+  <section class="playlist" id="listen">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow-plain">Between circles</span>
+        <h2>Guided audio and the circle playlist</h2>
+        <p>Grounded soundscapes for before a circle, after a long day, or whenever you need a moment. Press play on a preview below.</p>
+      </div>
+      <div class="audio-grid">
+        <div class="track"><span class="track-tag">Soundscape &middot; 30 min</span><h3>Woodland Dusk</h3><p>For when the noise is a little louder than you'd like.</p><audio controls preload="none" src="assets/audio/preview-woodland-dusk.mp3"></audio></div>
+        <div class="track"><span class="track-tag">Soundscape &middot; 30 min</span><h3>Morning Forest</h3><p>A slow, bright start before the day gets hold of you.</p><audio controls preload="none" src="assets/audio/preview-morning-forest.mp3"></audio></div>
+        <div class="track"><span class="track-tag">Soundscape &middot; 30 min</span><h3>Open Wilderness</h3><p>Space to breathe out and let your shoulders drop.</p><audio controls preload="none" src="assets/audio/preview-open-wilderness.mp3"></audio></div>
+      </div>
+      <div class="audio-cta">
+        <p><b>These are 90-second previews.</b> The full 30-minute tracks are free in the HeNix app, along with circle dates and a private weekly check-in.</p>
+        <a class="btn btn-dark" href="https://henix-member-app-2j3p.bolt.host" target="_blank" rel="noopener">Get the free HeNix app</a>
+      </div>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6T1hIGHat27I0MDS2YVBEO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
 </main>
 
-<section class="wrap" style="padding-block:48px" aria-label="HeNix playlist"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6T1hIGHat27I0MDS2YVBEO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></section>
 <footer>
   <div class="wrap foot-inner">
     <div class="foot-brand">
@@ -475,6 +638,7 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
     </div>
     <ul class="foot-links">
       <li><a href="https://instagram.com/henix_group" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.facebook.com/1442963268897060" target="_blank" rel="noopener">Facebook</a></li>
       <li><a href="https://sharpertraining.co.uk" target="_blank" rel="noopener">Sharper Training</a></li>
       <li><a href="https://www.youtube.com/@henixfireside" target="_blank" rel="noopener">YouTube</a></li>
       <li><a href="#top">Back to top</a></li>

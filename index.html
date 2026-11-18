@@ -283,6 +283,10 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
 .date-meta b{color:var(--ink);}
 .date-card .btn{align-self:flex-start;margin-top:6px;}
 .date-note{margin-top:22px;color:var(--ink-soft);font-size:14.5px;line-height:1.6;}
+.inside{background:var(--bg);padding-top:0;}
+.inside-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;}
+.inside-grid img,.inside-grid video{width:100%;height:520px;object-fit:cover;border-radius:18px;box-shadow:var(--shadow);display:block;background:#222;}
+@media (max-width:760px){.inside-grid{grid-template-columns:1fr;}.inside-grid img,.inside-grid video{height:420px;}}
 .night{background:var(--bg);}
 .night-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:start;}
 .steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;}
@@ -349,11 +353,11 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
     <img class="hero-glyph" src="assets/logo-large.png" alt="">
     <div class="wrap hero-grid">
       <div class="hero-inner">
-        <span class="eyebrow">Next circle &middot; Tue 17 Nov &middot; Salt Studios, TW1</span>
+        <span class="eyebrow">Next circle &middot; Tue 1 Dec &middot; The Christmas Edition &middot; Salt Studios, TW1</span>
         <h1>And so <em>we rise.</em></h1>
         <p class="hero-sub">A confidential space for men to step out of the always-on grind, drop the armour, and connect &mdash; honestly, without needing to perform. Circles, sound meditation and breathwork, built for busy lives, not silent retreats.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 17 Nov &middot; &pound;20</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 1 Dec &middot; &pound;20</a>
           <a class="btn btn-ghost" href="#night">What happens on the night</a>
         </div>
       </div>
@@ -380,23 +384,11 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
         <p>Spaces are limited and every circle is pre-book only. No experience needed, and you never have to speak.</p>
       </div>
       <div class="date-grid">
-        <div class="date-card">
-          <span class="date-tag alt">Clapham</span>
-          <div class="date-day">Friday 13 November</div>
-          <p class="date-meta"><b>7:15&ndash;9pm &middot; The Space, Clapham</b><br>Men's circle co-hosted with @nathan.saul.austen and @riq.hard. &pound;35.</p>
-          <a class="btn btn-dark" href="https://nathanausten.myflodesk.com/inperson13thnov" target="_blank" rel="noopener">Reserve for 13 Nov</a>
-        </div>
         <div class="date-card next">
-          <span class="date-tag">International Men's Day week</span>
-          <div class="date-day">Tuesday 17 November</div>
-          <p class="date-meta"><b>8:15&ndash;9:30pm &middot; Salt Studios, Twickenham (TW1)</b><br>Breathwork, sitting in pairs and the circle, closing with a short meditation. &pound;20.</p>
-          <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book on Eventbrite</a>
-        </div>
-        <div class="date-card">
-          <span class="date-tag">Salt Studios &middot; TW1</span>
+          <span class="date-tag">The Christmas Edition</span>
           <div class="date-day">Tuesday 1 December</div>
           <p class="date-meta"><b>8:15&ndash;9:30pm &middot; Salt Studios, Twickenham (TW1)</b><br>Breathwork, sitting in pairs and the circle, closing with a short meditation. &pound;20.</p>
-          <a class="btn btn-dark" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 1 Dec on Eventbrite</a>
+          <a class="btn btn-primary" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 1 Dec on Eventbrite</a>
         </div>
         <div class="date-card">
           <span class="date-tag">Salt Studios &middot; TW1</span>
@@ -444,6 +436,20 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
         <li><time>8:45</time><div><b>The circle</b><span>Each man can share what's on his mind. Sharing is optional.</span></div></li>
         <li><time>9:30</time><div><b>Close</b><span>A short meditation and grounding before you head home.</span></div></li>
       </ol>
+    </div>
+  </section>
+
+  <section class="inside" id="inside">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow-plain">Inside a circle</span>
+        <h2>Tuesday 17 November, International Men&rsquo;s Day week</h2>
+        <p>Low light, blankets, eyes closed. Phones away. This is what an hour off looks like.</p>
+      </div>
+      <div class="inside-grid">
+        <img loading="lazy" src="assets/circle-17nov.jpg" alt="Men lying under blankets during the sound meditation at a HeNix circle, Salt Studios">
+        <video src="assets/circle-17nov-pan.mp4" poster="assets/circle-17nov-pan.jpg" autoplay muted loop playsinline preload="none" aria-label="The room during the closing meditation at a HeNix circle"></video>
+      </div>
     </div>
   </section>
 
@@ -539,7 +545,7 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
           <div class="loc-photo"><img loading="lazy" src="assets/salt-studios.jpg" alt="Salt Studios, Twickenham"></div>
           <div class="loc-body">
             <h3>Salt Studios &middot; TW1</h3>
-            <p>Next circle: <b>Tuesday 17 November, 8:15&ndash;9:30pm</b>. &pound;20, pre-book only. Then <b>1 &amp; 15 December</b> and <b>5 &amp; 19 January</b>, same time.</p>
+            <p>Next circle: <b>Tuesday 1 December, 8:15&ndash;9:30pm</b> (The Christmas Edition). &pound;20, pre-book only. Then <b>15 December</b> and <b>5 &amp; 19 January</b>, same time.</p>
             <a class="loc-link" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book on Eventbrite &rarr;</a>
           </div>
         </div>
@@ -547,8 +553,8 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
           <div class="loc-photo"><img loading="lazy" src="assets/space-clapham.jpg" alt="The Space, Clapham"></div>
           <div class="loc-body">
             <h3>The Space &middot; Clapham</h3>
-            <p>Next circle: <b>Friday 13 November, 7:15&ndash;9pm</b>. &pound;35. Co-hosted with @nathan.saul.austen and @riq.hard.</p>
-            <a class="loc-link" href="https://nathanausten.myflodesk.com/inperson13thnov" target="_blank" rel="noopener">Reserve for 13 November &rarr;</a>
+            <p>Co-hosted with @nathan.saul.austen and @riq.hard. Next Clapham date coming soon.</p>
+            <a class="loc-link" href="https://instagram.com/henix_group" target="_blank" rel="noopener">Follow @henix_group to hear first &rarr;</a>
           </div>
         </div>
         <div class="loc-card host">
@@ -634,9 +640,8 @@ footer{background:var(--dark-deep);color:var(--on-dark-soft);padding-block:36px 
       </div>
       <div class="form-card">
         <h3>Ready to join a circle?</h3>
-        <p>Next up: Clapham on Friday 13 Nov, then Salt Studios, TW1 on Tuesday 17 Nov (International Men's Day week), then 1 &amp; 15 Dec and 5 &amp; 19 Jan.</p>
-        <a class="btn btn-dark" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 17 Nov on Eventbrite</a>
-        <a class="btn btn-ghost" style="color:var(--ink);border-color:var(--line-strong);margin-top:10px" href="https://nathanausten.myflodesk.com/inperson13thnov" target="_blank" rel="noopener">Reserve Clapham, 13 Nov</a>
+        <p>Next up: Salt Studios, TW1 on Tuesday 1 Dec (The Christmas Edition), then 15 Dec and 5 &amp; 19 Jan.</p>
+        <a class="btn btn-dark" href="https://www.eventbrite.com/cc/tw1-mens-circles-4878642" target="_blank" rel="noopener">Book 1 Dec on Eventbrite</a>
         <p class="contact-note">Prefer to ask first? Email <a href="mailto:gregorysharpe15@gmail.com" style="color:var(--teal-deep);font-weight:700;">Greg</a> or DM <a href="https://instagram.com/henix_group" target="_blank" rel="noopener" style="color:var(--teal-deep);font-weight:700;">@henix_group</a> directly.</p>
       </div>
     </div>
